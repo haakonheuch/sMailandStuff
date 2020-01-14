@@ -38,6 +38,8 @@ exports.getLocalConfig = function() {
     }
 
     hostUrlWithPort = hostUrl + ':' + port;
+
+    console.log('hostUrlWithPort=' + hostUrlWithPort);
  
     // Reading vital config from environment variables
     //
@@ -60,6 +62,8 @@ exports.getLocalConfig = function() {
     localConfig.hostUrl = hostUrl;
     localConfig.hostUrlWithPort = hostUrlWithPort;
     localConfig.port = port;
+
+    console.log(JSON.stringify(localConfig));
 
     return localConfig;
 
